@@ -10,6 +10,8 @@ async function getData() {
   return data;
 }
 
+export const revalidate = 5;
+
 export default async function IndexPage() {
   const data = (await getData()) as Post[];
 
@@ -32,7 +34,7 @@ export default async function IndexPage() {
               </div>
 
               <Link
-                href={`/post/${post.slug.current}`}
+                href={`/posts/${post.slug.current}`}
                 prefetch
                 className="space-y-3 xl:col-span-3"
               >
