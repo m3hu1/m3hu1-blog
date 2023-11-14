@@ -12,7 +12,7 @@ Welcome to my personal blog built with Next.js and deployed on Vercel. This proj
 - [Deployment](#deployment)
 - [Built With](#built-with)
 - [Contributing](#contributing)
-- [Next.js Stuff](#nextjs)
+- [Next.js](#Next.js)
 
 ## Features
 
@@ -42,7 +42,7 @@ The project is automatically deployed to Vercel upon changes to the main branch.
 
 Feel free to contribute by opening issues or submitting pull requests. Your feedback and contributions are welcome!
 
-### Next.js Stuff
+### Next.js
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
