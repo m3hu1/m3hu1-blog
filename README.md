@@ -12,7 +12,7 @@ Welcome to my personal blog built with Next.js and deployed on Vercel. This proj
 - [Deployment](#deployment)
 - [Built With](#built-with)
 - [Contributing](#contributing)
-- [Next.js](#Next.js)
+- [Next.js](#nextjs)
 
 ## Features
 
