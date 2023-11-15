@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Post } from "./lib/interface";
 import { client } from "./lib/sanity";
+import Footer from "./components/Footer";
 
 async function getData() {
   const query = `*[_type == "post"]`;
@@ -16,6 +17,7 @@ export default async function IndexPage() {
   const data = (await getData()) as Post[];
 
   return (
+    <div className="flex flex-col min-h-screen">
     <div className="divide-y divide-gray-200 dark:divide-gray-700">
       <div className="space-y-2 pt-6 pb-8 md:space-y-5">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
@@ -39,7 +41,7 @@ export default async function IndexPage() {
                 className="space-y-3 xl:col-span-3"
               >
                 <div>
-                  <h3 className="text-2xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100">
+                  <h3 className="text-2xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100 hover:glow">
                     {post.title}
                   </h3>
                 </div>
@@ -52,6 +54,8 @@ export default async function IndexPage() {
           </li>
         ))}
       </ul>
+      </div>
+      <Footer />
     </div>
   );
 }
