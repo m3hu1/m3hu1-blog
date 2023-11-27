@@ -6,7 +6,10 @@ import { useEffect, useState } from "react";
 export default function Themebutton() {
   const { setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-
+  const playClickSound = () => {
+    const audio = new Audio("/toggle.mp3");
+    audio.play();
+  };
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -17,7 +20,11 @@ export default function Themebutton() {
 
   return (
     <button
-      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
+      onClick={() => {  
+        setTheme(resolvedTheme === "dark" ? "light" : "dark")
+        playClickSound();
+      }}
+      
     >
       {resolvedTheme === "dark" ? (
         <svg
