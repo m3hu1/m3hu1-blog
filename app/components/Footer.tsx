@@ -6,7 +6,7 @@ const Footer = () => {
           <p className="text-gray-700 dark:text-gray-300">
             Developed by{" "}
             <a
-              href="https://github.com/m3hu1"
+              href="https://github.com/m3hu1/m3hu1-blog"
               className="text-teal-500 hover:glow"
             >
               Mehul
